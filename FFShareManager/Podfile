@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '8.0'
+
+target 'FFShareManager' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for FFShareManager
+  
+  pod 'Masonry'
+
+#分享:
+    #基础库
+    pod 'UMCCommon'
+    pod 'UMCSecurityPlugins'
+    
+    # 集成微信(精简版0.2M)
+    pod 'UMCShare/Social/ReducedWeChat'
+    
+    # 集成QQ/QZone/TIM(精简版0.5M)
+    pod 'UMCShare/Social/ReducedQQ'
+    
+    # 集成新浪微博(精简版1M)
+    pod 'UMCShare/Social/ReducedSina'
+
+#统计:
+    pod 'UMCAnalytics'
+
+
+  target 'FFShareManagerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FFShareManagerUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
